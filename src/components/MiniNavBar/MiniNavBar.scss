@@ -1,0 +1,72 @@
+$main: #3f3344;
+$accent: #f7cfbf;
+$white: #f4edeb;
+$black: #09070a;
+
+.MiniNavBar {
+	background-color: $white;
+	width: 100svw;
+
+	position: fixed;
+	top: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+	// box-sizing: content-box;
+
+	z-index: 2;
+
+	.header {
+		width: 100%;
+		height: 66px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding-inline: 2rem;
+
+		box-sizing: border-box;
+
+		.name {
+			font-size: 2.4rem;
+		}
+
+		button {
+			border: none;
+			background-color: transparent;
+			margin-left: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			font-size: 2rem;
+			color: $black;
+		}
+	}
+
+	.hamburger {
+		ul {
+			li {
+				height: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-bottom: solid 1px rgba(gray, 0.1);
+			}
+		}
+	}
+
+	.hide {
+		display: none;
+	}
+}
+
+@media (min-width: 1251px) {
+	.MiniNavBar {
+		display: none;
+	}
+}

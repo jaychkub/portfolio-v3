@@ -1,0 +1,188 @@
+$main: #3f3344;
+$accent: #f7cfbf;
+$white: #f4edeb;
+$black: #09070a;
+$gray: rgb(48, 52, 51);
+
+#Projects {
+	width: 80svw;
+	// min-height: 100svh;
+	background-color: $white;
+	padding-inline: 2rem;
+	// padding-block: 5.5rem;
+	box-sizing: border-box;
+	padding-top: 5.5rem;
+	// padding-bottom: 7;
+
+	h2 {
+		width: max-content;
+		font-size: 30px;
+		z-index: 1;
+		position: relative;
+
+		span {
+			color: transparent;
+			letter-spacing: 0.1rem;
+		}
+	}
+
+	h2:before {
+		content: "";
+		position: absolute;
+		left: 93px;
+		top: 7.2px;
+		width: 23px;
+		height: 23px;
+		border-radius: 50%;
+		background-color: $main;
+		z-index: -1;
+	}
+
+	.grid {
+		width: 100%;
+		// background-color: red;
+		height: 100%;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: min-content;
+		gap: 2rem;
+
+		margin-top: 3rem;
+		padding-inline: 4rem;
+		box-sizing: border-box;
+
+		padding-bottom: 10rem;
+
+		.card {
+			width: 100%;
+			// height: 20rem;
+			aspect-ratio: 16 / 8;
+			// background-color: green;
+			position: relative;
+			// border: 4px solid $black;
+			border-radius: 20px;
+			overflow: hidden;
+			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+				rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+			img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+
+			.passive {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				// background-color: rgba($main, 0.3);
+				background: radial-gradient(
+					circle,
+					rgba($main, 0.6) 0%,
+					rgba($main, 1) 100%
+				);
+				z-index: 1;
+				opacity: 1;
+				transition: opacity 0.15s;
+			}
+
+			.active {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				// background-color: rgba($accent, 0.5);
+				background: radial-gradient(
+					circle,
+					rgba($accent, 0.7) 0%,
+					rgba($accent, 1) 100%
+				);
+				z-index: 1;
+				opacity: 0;
+				transition: opacity 0.15s;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				.tag-container {
+					height: min-content;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
+
+					p {
+						background-color: $main;
+						color: $white;
+						margin: 5px;
+						padding: 10px;
+						font-family: "Chakra Petch";
+						letter-spacing: 0.2rem;
+					}
+				}
+
+				.link-container {
+					margin-top: 20px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					.app {
+						// width: 150px;
+						// height: 40px;
+						// background-color: green;
+
+						border: 3px solid $main;
+						padding: 0.8rem;
+						font-size: 1rem;
+						letter-spacing: 0.1rem;
+						font-weight: 700;
+
+						color: $main;
+						text-decoration: none;
+
+						margin-right: 10px;
+					}
+
+					.app:visited {
+						color: $main;
+					}
+
+					.github {
+						width: 40px;
+						height: 40px;
+						// background-color: red;
+						font-size: 2.5rem;
+						color: $main;
+
+						position: relative;
+						top: 2px;
+					}
+				}
+			}
+		}
+
+		.card:hover {
+			.passive {
+				opacity: 0;
+			}
+
+			.active {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media (max-width: 1250px) {
+	#Projects {
+		width: 100svw;
+
+		.grid {
+			grid-template-columns: 1fr;
+			padding-inline: 0;
+		}
+	}
+}

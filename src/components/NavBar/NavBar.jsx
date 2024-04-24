@@ -1,14 +1,16 @@
+import "./NavBar.scss";
+
 import React from "react";
 
 import { FaLinkedin, FaGithub, FaInstagram, FaDiscord } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
 
-import "./NavBar.scss";
+import photo from "../../assets/photo.jpg";
 
 const Header = () => {
 	return (
 		<div className="NavBar">
-			<img src={null} alt="" />
+			<img src={photo} alt="" />
 			<p className="name">Jake Courtney</p>
 			<p className="title">
 				FRONT-END WEB DEVELOPER <span>FROM THE US</span>

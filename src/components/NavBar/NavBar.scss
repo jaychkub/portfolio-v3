@@ -2,6 +2,7 @@ $main: #3f3344;
 $accent: #f7cfbf;
 $white: #f4edeb;
 $black: #1e1921;
+$gray: rgb(48, 52, 51);
 
 .NavBar {
 	height: 100svh;
@@ -18,6 +19,13 @@ $black: #1e1921;
 
 	box-sizing: border-box;
 	padding-inline: 1rem;
+
+	img {
+		width: 150px;
+		margin-bottom: 2rem;
+		border-radius: 50%;
+		border: 3px solid $white;
+	}
 
 	.name {
 		color: $white;

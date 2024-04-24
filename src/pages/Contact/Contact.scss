@@ -1,0 +1,257 @@
+$main: #3f3344;
+$accent: #f7cfbf;
+$white: #f4edeb;
+$black: #09070a;
+$gray: rgb(48, 52, 51);
+
+#Contact {
+	width: 80svw;
+	min-height: 50svh;
+	background-color: $accent;
+	padding-inline: 2rem;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		padding-block: 8rem;
+
+		h2 {
+			font-size: 30px;
+			color: $main;
+			letter-spacing: 0.2rem;
+			margin-bottom: 1.5rem;
+		}
+
+		.form-container {
+			width: 600px;
+			height: 300px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			// background-color: rgba(lightblue, 0.5);
+
+			.left,
+			.right {
+				width: 50%;
+				height: 100%;
+				box-sizing: border-box;
+				// padding-inline: 2rem;
+				// padding-block: 3rem;
+
+				display: flex;
+				align-items: center;
+
+				.input {
+					position: relative;
+					width: 100%;
+					height: min-content;
+
+					p {
+						width: max-content;
+						height: min-content;
+						position: absolute;
+						top: 10px;
+						margin-inline: 9.5px;
+
+						font-size: 13.33px;
+						color: $gray;
+						background-color: $accent;
+						letter-spacing: 0.1rem;
+						pointer-events: none;
+
+						transition: all 0.15s;
+					}
+
+					input:focus + p,
+					input:not(:placeholder-shown) + p,
+					textarea:focus + p,
+					textarea:not(:placeholder-shown) + p {
+						color: $main;
+						top: -7px;
+						padding-inline: 0.2rem;
+						font-size: 11px;
+					}
+				}
+
+				input,
+				textarea {
+					width: 100%;
+					background-color: transparent;
+					border: 1px solid $main;
+
+					box-sizing: border-box;
+					padding: 0.5rem;
+
+					color: $main;
+					letter-spacing: 0.1rem;
+				}
+
+				input:focus,
+				textarea:focus {
+					outline: none;
+				}
+
+				// input::placeholder,
+				// textarea::placeholder {
+				// 	color: $gray;
+				// }
+
+				// input: focus;
+			}
+
+			.left {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+
+				max-height: 210px;
+
+				// background-color: rgba(red, 0.5);
+
+				.name-container {
+					width: 100%;
+					height: calc(50% + 19px);
+
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+
+				input {
+					width: 100%;
+					height: 38px;
+				}
+			}
+
+			.divider {
+				width: 1px;
+				height: 80%;
+				background-color: $main;
+				margin-block: auto;
+				margin-inline: 2rem;
+			}
+
+			.right {
+				// background-color: rgba(green, 0.5);
+
+				textarea {
+					width: 100%;
+					// height: 100%;
+					resize: none;
+				}
+
+				textarea::-webkit-scrollbar {
+					display: none;
+				}
+			}
+		}
+
+		.button-container {
+			display: flex;
+			gap: 10px;
+
+			button {
+				background-color: transparent;
+				border: 1px solid $main;
+				padding: 0.8rem;
+				font-size: 1rem;
+				letter-spacing: 0.1rem;
+				font-weight: 700;
+
+				color: $main;
+
+				transition: scale 0.15s;
+
+				span {
+					position: relative;
+					top: 3px;
+				}
+			}
+
+			button:hover {
+				// border: 1px solid $white;
+				// color: $white;
+
+				scale: 103%;
+			}
+
+			.quickmail {
+				border: 1px solid #dc5f7a;
+				color: #dc5f7a;
+			}
+		}
+	}
+}
+
+@media (max-width: 1250px) {
+	#Contact {
+		width: 100svw;
+
+		.container {
+			width: 100%;
+			height: 80svh;
+			padding-block: 0;
+
+			h2 {
+				margin-bottom: 3.5rem;
+			}
+
+			.form-container {
+				width: 100%;
+				// height: 500px;
+
+				flex-direction: column;
+
+				.divider {
+					display: none;
+				}
+
+				.left,
+				.right {
+					width: 100%;
+					height: 50%;
+				}
+
+				.left {
+					// margin-bottom: 2rem;
+					height: 150px;
+
+					.name-container {
+						width: 100%;
+						height: auto;
+						flex-direction: row;
+						justify-content: space-between;
+
+						.input {
+							width: 48%;
+						}
+					}
+
+					input {
+						margin-bottom: 1rem;
+					}
+				}
+
+				.right {
+					height: 250px;
+				}
+			}
+
+			button {
+				margin-top: 4rem;
+			}
+		}
+	}
+}

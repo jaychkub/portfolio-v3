@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
-
 import "./MiniNavBar.scss";
 
-import menu from "./hamburger.png";
+import React, { useState } from "react";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 

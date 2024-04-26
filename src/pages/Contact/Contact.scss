@@ -3,6 +3,7 @@ $accent: #f7cfbf;
 $white: #f4edeb;
 $black: #09070a;
 $gray: rgb(48, 52, 51);
+$pink: #dc5f7a;
 
 #Contact {
 	width: 80svw;
@@ -188,8 +189,8 @@ $gray: rgb(48, 52, 51);
 			}
 
 			.quickmail {
-				border: 1px solid #dc5f7a;
-				color: #dc5f7a;
+				border: 1px solid $pink;
+				color: $pink;
 			}
 		}
 	}

@@ -5,7 +5,7 @@ import React from "react";
 import { FaReact, FaGitAlt, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 
-import responsive from "../../assets/responsive.png";
+import responsive from "../../assets/responsive1.png";
 import ux from "../../assets/ux.png";
 import performance from "../../assets/performance.png";
 
@@ -18,24 +18,33 @@ const About = () => {
 					<div className="description">
 						<h3>WHO AM I?</h3>
 						<p>
-							<span className="highlight">
-								Lorem ipsum dolor sit, amet consectetur
-								adipisicing elit.
-							</span>{" "}
-							<span className="super-highlight">Officia</span>{" "}
-							dolor optio, id qui soluta minus. Velit pariatur
-							quae, vero <span className="highlight">beatae</span>{" "}
-							dicta <span className="highlight">nesciunt</span>{" "}
-							fugiat quo atque hic alias voluptatibus
-							necessitatibus accusamus itaque qui facere quos
-							aperiam? Aspernatur necessitatibus animi ut.
-							Distinctio!
+							Hi there! I'm{" "}
+							<span className="super-highlight">
+								Jake Courtney
+							</span>
+							, a coder with over{" "}
+							<span className="highlight">5+ years</span> of
+							experience. Although I've only recently delved into
+							web development, I'm passionate about creating
+							projects in{" "}
+							<span className="super-highlight">React</span> using{" "}
+							<span className="highlight">JavaScript</span> and{" "}
+							<span className="highlight">HTML/CSS</span>.
+							Additionally, I have a keen interest in Arduino and
+							build exciting projects using{" "}
+							<span className="highlight">C++</span>. When I'm not
+							coding, I enjoy{" "}
+							<span className="highlight">wrestling</span>,
+							<span className="highlight">snowboarding</span>, and
+							exploring my creative side through various{" "}
+							<span className="highlight">arts and crafts</span>{" "}
+							activities.
 						</p>
 					</div>
 					<div className="divider"></div>
 					<div className="skills">
 						<h3>SKILLS</h3>
-						<div className="skill-container">
+						{/* <div className="skill-container">
 							<div className="skill">
 								<FaReact />
 								<p>React</p>
@@ -56,22 +65,33 @@ const About = () => {
 								<SiJavascript />
 								<p>JavaScript</p>
 							</div>
-						</div>
+						</div> */}
 						<p>
-							Lorem ipsum dolor sit amet,{" "}
-							<span className="highlight">
-								consectetur adipisicing elit.
-							</span>{" "}
-							Nobis, quod? Repellendus voluptates laborum mollitia
-							nemo optio nam libero eveniet! Est totam voluptatem
-							laboriosam maiores!{" "}
-							<span className="highlight">Rerum</span> quaerat,{" "}
-							<span className="highlight">minus</span> sint
-							<span className="highlight">natus</span> totam{" "}
-							<span className="highlight">facere</span> iusto
-							quidem mollitia vel cumque laudantium maiores
-							officiis eaque dignissimos soluta in perspiciatis
-							expedita fugit nihil sequi voluptates. Mollitia.
+							I utilize <span className="highlight">React</span>,{" "}
+							<span className="highlight">Git</span>,{" "}
+							<span className="highlight">JavaScript</span>,{" "}
+							<span className="highlight">HTML</span>,{" "}
+							<span className="highlight">CSS</span>,{" "}
+							<span className="highlight">SCSS</span>, and{" "}
+							<span className="highlight">Node.js</span>
+							on a daily basis for web development. These
+							versatile technologies allow me to create dynamic
+							and responsive user interfaces, efficiently manage
+							project versions, and build robust full-stack
+							applications. Additionally, I have experience
+							working with popular frameworks like{" "}
+							<span className="highlight">Tailwind</span> and{" "}
+							<span className="highlight">Bootstrap</span> and{" "}
+							<span className="highlight">Express</span> as well
+							as databases like{" "}
+							<span className="highlight">MongoDB</span> for
+							efficient data management. Beyond web technologies,
+							I'm also proficient in languages such as{" "}
+							<span className="highlight">C++</span>,{" "}
+							<span className="highlight">Java</span>, and{" "}
+							<span className="highlight">Python</span>, enabling
+							me to tackle diverse programming challenges and
+							projects across various domains.
 						</p>
 					</div>
 				</div>
@@ -82,27 +102,33 @@ const About = () => {
 							<img src={responsive} alt="" />
 							<h4>RESPONSIVE / MOBILE FREINDLY</h4>
 							<p>
-								Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Odit, itaque aspernatur optio
-								culpa magnam repellendus.
+								Using modern CSS techniques and responsive
+								design principles, I craft web layouts that
+								seamlessly adapt to both desktop and mobile
+								viewports, ensuring an optimal user experience
+								across devices.
 							</p>
 						</div>
 						<div className="card">
 							<img src={ux} alt="" />
 							<h4>UI & UX</h4>
 							<p>
-								Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Odit, itaque aspernatur optio
-								culpa magnam repellendus.
+								With a keen eye for aesthetics and usability, I
+								meticulously craft user interfaces that are
+								visually appealing, intuitive, and enhance the
+								overall user experience.
 							</p>
 						</div>
 						<div className="card">
 							<img src={performance} alt="" />
 							<h4>PERFORMANCE</h4>
 							<p>
-								Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Odit, itaque aspernatur optio
-								culpa magnam repellendus.
+								I prioritize speed and reliability in my website
+								development, employing best practices and
+								optimizations to ensure high performance. My
+								goal is to deliver lightning-fast load times and
+								robust functionality for an exceptional user
+								experience.
 							</p>
 						</div>
 					</div>

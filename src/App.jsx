@@ -1,7 +1,8 @@
 import "./App.scss";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import React from "react";
+import useScrollSnap from "react-use-scroll-snap";
 
 import ParalaxBackground from "./components/ParalaxBackground";
 import MiniNavBar from "./components/MiniNavBar/MiniNavBar";

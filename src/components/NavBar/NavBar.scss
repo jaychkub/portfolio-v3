@@ -3,6 +3,7 @@ $accent: #f7cfbf;
 $white: #f4edeb;
 $black: #1e1921;
 $gray: rgb(48, 52, 51);
+$pink: #dc5f7a;
 
 .NavBar {
 	height: 100svh;
@@ -40,7 +41,12 @@ $gray: rgb(48, 52, 51);
 		margin-top: 1rem;
 		text-align: center;
 
-		span {
+		.pink {
+			color: $pink;
+			margin-inline: 2px;
+		}
+
+		.white {
 			color: $white;
 		}
 	}
@@ -56,10 +62,13 @@ $gray: rgb(48, 52, 51);
 
 		li {
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 
-			a {
+			button {
+				background-color: transparent;
+				border: none;
 				text-decoration: none;
 				color: $accent;
 				font-size: 13px;
@@ -67,8 +76,21 @@ $gray: rgb(48, 52, 51);
 				font-weight: 500;
 			}
 
-			a:visited {
-				color: $accent;
+			button:hover {
+				color: $pink;
+			}
+
+			.bar {
+				width: 0%;
+				height: 1px;
+				background-color: $pink;
+				margin-top: 1px;
+
+				transition: width 0.15s;
+			}
+
+			button:hover + .bar {
+				width: 100%;
 			}
 		}
 	}
@@ -81,7 +103,7 @@ $gray: rgb(48, 52, 51);
 	}
 
 	.social-container {
-		width: 150px;
+		width: 120px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -89,6 +111,12 @@ $gray: rgb(48, 52, 51);
 		a {
 			color: $accent;
 			font-size: 20px;
+
+			transition: color 0.15s;
+		}
+
+		a:hover {
+			color: $pink;
 		}
 	}
 }

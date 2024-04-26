@@ -19,16 +19,23 @@ const Projects = () => {
 					<img src={calc} alt="" />
 					<div className="passive"></div>
 					<div className="active">
+						<h3>Calculator</h3>
 						<div className="tag-container">
 							<p>React</p>
 							<p>JS</p>
 							<p>Tailwind</p>
 						</div>
 						<div className="link-container">
-							<a href="" className="app">
+							<a
+								href="https://jaychkub.github.io/1-calculator/"
+								className="app"
+								target="_blank">
 								Visit App
 							</a>
-							<a href="" className="github">
+							<a
+								href="https://github.com/jaychkub/1-calculator/"
+								className="github"
+								target="_blank">
 								<FaGitAlt />
 							</a>
 						</div>
@@ -38,16 +45,23 @@ const Projects = () => {
 					<img src={quiz} alt="" />
 					<div className="passive"></div>
 					<div className="active">
+						<h3>Zodiac Quiz</h3>
 						<div className="tag-container">
 							<p>React</p>
 							<p>JS</p>
 							<p>SCSS</p>
 						</div>
 						<div className="link-container">
-							<a href="" className="app">
+							<a
+								href="https://jaychkub.github.io/2-quiz/"
+								className="app"
+								target="_blank">
 								Visit App
 							</a>
-							<a href="" className="github">
+							<a
+								href="https://github.com/jaychkub/2-quiz/"
+								className="github"
+								target="_blank">
 								<FaGitAlt />
 							</a>
 						</div>
@@ -57,6 +71,7 @@ const Projects = () => {
 					<img src={poke} alt="" />
 					<div className="passive"></div>
 					<div className="active">
+						<h3>Pokedex</h3>
 						<div className="tag-container">
 							<p>React</p>
 							<p>JS</p>
@@ -65,10 +80,16 @@ const Projects = () => {
 							<p>PokeAPI</p>
 						</div>
 						<div className="link-container">
-							<a href="" className="app">
+							<a
+								href="https://jaychkub.github.io/4-Pokedex/"
+								className="app"
+								target="_blank">
 								Visit App
 							</a>
-							<a href="" className="github">
+							<a
+								href="https://github.com/jaychkub/4-Pokedex/"
+								className="github"
+								target="_blank">
 								<FaGitAlt />
 							</a>
 						</div>

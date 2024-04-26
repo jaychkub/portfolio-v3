@@ -50,6 +50,13 @@ $gray: rgb(48, 52, 51);
 	}
 
 	.hamburger {
+		width: 100%;
+		height: 204px;
+		position: absolute;
+		top: 66px;
+		background-color: $white;
+		transition: all 0.15s;
+
 		ul {
 			li {
 				height: 50px;
@@ -57,12 +64,23 @@ $gray: rgb(48, 52, 51);
 				justify-content: center;
 				align-items: center;
 				border-bottom: solid 1px rgba(gray, 0.1);
+
+				button {
+					background-color: none;
+					border: none;
+					color: $black;
+					letter-spacing: 0.1rem;
+				}
 			}
 		}
 	}
 
 	.hide {
-		display: none;
+		top: -204px;
+
+		// * {
+		// 	display: none;
+		// }
 	}
 }
 

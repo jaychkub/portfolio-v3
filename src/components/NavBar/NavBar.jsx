@@ -13,37 +13,83 @@ const Header = () => {
 			<img src={photo} alt="" />
 			<p className="name">Jake Courtney</p>
 			<p className="title">
-				FRONT-END WEB DEVELOPER <span>FROM THE US</span>
+				FRONT-END{" "}
+				<span className="pink">
+					{"<"}WEB{">"}
+				</span>{" "}
+				DEVELOPER <span className="white">USING REACT</span>
 			</p>
 			<ul>
 				<li>
-					<a href="#Home">HOME</a>
+					<button
+						onClick={() => {
+							const element = document.getElementById("Home");
+							element.scrollIntoView({
+								behavior: "smooth",
+							});
+						}}>
+						HOME
+					</button>
+					<div className="bar"></div>
 				</li>
 				<li>
-					<a href="#About">ABOUT</a>
+					<button
+						onClick={() => {
+							const element = document.getElementById("About");
+							element.scrollIntoView({
+								behavior: "smooth",
+							});
+						}}>
+						ABOUT
+					</button>
+					<div className="bar"></div>
 				</li>
 				<li>
-					<a href="#Projects">PROJECTS</a>
+					<button
+						onClick={() => {
+							const element = document.getElementById("Projects");
+							element.scrollIntoView({
+								behavior: "smooth",
+							});
+						}}>
+						PROJECTS
+					</button>
+					<div className="bar"></div>
 				</li>
 				<li>
-					<a href="#Contact">CONTACT</a>
+					<button
+						onClick={() => {
+							const element = document.getElementById("Contact");
+							element.scrollIntoView({
+								behavior: "smooth",
+							});
+						}}>
+						CONTACT
+					</button>
+					<div className="bar"></div>
 				</li>
 			</ul>
 			<div className="divider"></div>
 			<div className="social-container">
-				<a href="" target="_blank">
+				<a
+					href="https://www.linkedin.com/in/jake-courtney-99aa622bb/"
+					target="_blank">
 					<FaLinkedin />
 				</a>
-				<a href="" target="_blank">
+				{/* <a
+					href="https://www.instagram.com/justjake_._._/"
+					target="_blank">
 					<FaInstagram />
-				</a>
+				</a> */}
 				<a href="https://github.com/jaychkub" target="_blank">
 					<FaGithub />
 				</a>
 				<a href="" target="_blank">
 					<SiIndeed />
 				</a>
-				<a href="" target="_blank">
+				<a
+					href="https://discordapp.com/users/690718830548484106"
+					target="_blank">
 					<FaDiscord />
 				</a>
 			</div>

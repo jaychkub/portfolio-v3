@@ -21,12 +21,62 @@ const MiniNavBar = () => {
 					<RxHamburgerMenu />
 				</button>
 			</div>
-			<div className={isHamburgerDisplayed ? "hamburger" : "hide"}>
+			<div
+				className={
+					isHamburgerDisplayed ? "hamburger" : "hamburger hide"
+				}>
 				<ul>
-					<li>HOME</li>
-					<li>ABOUT</li>
-					<li>PROJECTS</li>
-					<li>CONTACT</li>
+					<li>
+						<button
+							onClick={() => {
+								toggleHamburger();
+								const element = document.getElementById("Home");
+								element.scrollIntoView({
+									behavior: "smooth",
+								});
+							}}>
+							HOME
+						</button>
+					</li>
+					<li>
+						<button
+							onClick={() => {
+								toggleHamburger();
+								const element =
+									document.getElementById("About");
+								element.scrollIntoView({
+									behavior: "smooth",
+								});
+							}}>
+							ABOUT
+						</button>
+					</li>
+					<li>
+						<button
+							onClick={() => {
+								toggleHamburger();
+								const element =
+									document.getElementById("Projects");
+								element.scrollIntoView({
+									behavior: "smooth",
+								});
+							}}>
+							PROJECTS
+						</button>
+					</li>
+					<li>
+						<button
+							onClick={() => {
+								toggleHamburger();
+								const element =
+									document.getElementById("Contact");
+								element.scrollIntoView({
+									behavior: "smooth",
+								});
+							}}>
+							CONTACT
+						</button>
+					</li>
 				</ul>
 			</div>
 		</div>

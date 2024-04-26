@@ -18,7 +18,8 @@ $gray: rgb(48, 52, 51);
 	// 	rgba(0, 11, 20, 1) 100%
 	// );
 
-	padding: 2rem;
+	padding-inline: 6rem;
+	padding-top: 5.5rem;
 
 	color: $white;
 
@@ -81,5 +82,6 @@ $gray: rgb(48, 52, 51);
 @media (max-width: 1250px) {
 	#Home {
 		width: 100%;
+		padding: 2rem;
 	}
 }

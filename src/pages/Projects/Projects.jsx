@@ -16,24 +16,26 @@ const Projects = () => {
 			</h2>
 			<div className="grid">
 				<div className="card">
-					<img src={calc} alt="" />
+					<img src={poke} alt="" />
 					<div className="passive"></div>
 					<div className="active">
-						<h3>Calculator</h3>
+						<h3>Pokedex</h3>
 						<div className="tag-container">
 							<p>React</p>
 							<p>JS</p>
-							<p>Tailwind</p>
+							<p>SCSS</p>
+							<p>RESTful</p>
+							<p>PokeAPI</p>
 						</div>
 						<div className="link-container">
 							<a
-								href="https://jaychkub.github.io/1-calculator/"
+								href="https://jaychkub.github.io/4-Pokedex/"
 								className="app"
 								target="_blank">
 								Visit App
 							</a>
 							<a
-								href="https://github.com/jaychkub/1-calculator/"
+								href="https://github.com/jaychkub/4-Pokedex/"
 								className="github"
 								target="_blank">
 								<FaGitAlt />
@@ -68,26 +70,24 @@ const Projects = () => {
 					</div>
 				</div>
 				<div className="card">
-					<img src={poke} alt="" />
+					<img src={calc} alt="" />
 					<div className="passive"></div>
 					<div className="active">
-						<h3>Pokedex</h3>
+						<h3>Calculator</h3>
 						<div className="tag-container">
 							<p>React</p>
 							<p>JS</p>
-							<p>SCSS</p>
-							<p>RESTful</p>
-							<p>PokeAPI</p>
+							<p>Tailwind</p>
 						</div>
 						<div className="link-container">
 							<a
-								href="https://jaychkub.github.io/4-Pokedex/"
+								href="https://jaychkub.github.io/1-calculator/"
 								className="app"
 								target="_blank">
 								Visit App
 							</a>
 							<a
-								href="https://github.com/jaychkub/4-Pokedex/"
+								href="https://github.com/jaychkub/1-calculator/"
 								className="github"
 								target="_blank">
 								<FaGitAlt />

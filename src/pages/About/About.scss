@@ -84,6 +84,31 @@ $gray: rgb(48, 52, 51);
 			}
 
 			.skills {
+				position: relative;
+				z-index: 1;
+
+				.icon {
+					position: absolute;
+					z-index: -1;
+					font-size: 250px;
+					color: rgba($main, 0.1);
+				}
+
+				.react {
+					top: -30px;
+					left: -20px;
+				}
+
+				.git {
+					top: 20px;
+					left: 220px;
+				}
+
+				.html {
+					top: -30px;
+					left: 460px;
+				}
+
 				.skill-container {
 					width: 100%;
 					display: flex;
@@ -187,7 +212,7 @@ $gray: rgb(48, 52, 51);
 				.card:hover {
 					box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
 						rgba(60, 64, 67, 0.15) 0px 1px 3px 1px,
-						rgba($accent, 0.6) 0px 5px;
+						rgba($accent, 1) 0px 5px;
 					// rgba($accent, 0.55) 0px 10px;
 
 					top: -5px;
@@ -211,6 +236,10 @@ $gray: rgb(48, 52, 51);
 				}
 
 				.skills {
+					.icon {
+						display: none;
+					}
+
 					.skill-container {
 						width: 100%;
 					}
@@ -223,6 +252,7 @@ $gray: rgb(48, 52, 51);
 
 					.card {
 						width: 100%;
+						height: auto;
 					}
 				}
 			}

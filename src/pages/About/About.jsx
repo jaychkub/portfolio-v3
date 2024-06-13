@@ -66,6 +66,9 @@ const About = () => {
 								<p>JavaScript</p>
 							</div>
 						</div> */}
+						<FaReact className="icon react" />
+						<FaGitAlt className="icon git" />
+						<FaHtml5 className="icon html" />
 						<p>
 							I utilize <span className="highlight">React</span>,{" "}
 							<span className="highlight">Git</span>,{" "}
@@ -80,7 +83,7 @@ const About = () => {
 							project versions, and build robust full-stack
 							applications. Additionally, I have experience
 							working with popular frameworks like{" "}
-							<span className="highlight">Tailwind</span> and{" "}
+							<span className="highlight">Tailwind</span>,{" "}
 							<span className="highlight">Bootstrap</span> and{" "}
 							<span className="highlight">Express</span> as well
 							as databases like{" "}
@@ -91,7 +94,7 @@ const About = () => {
 							<span className="highlight">Java</span>, and{" "}
 							<span className="highlight">Python</span>, enabling
 							me to tackle diverse programming challenges and
-							projects across various domains.
+							projects across various applications.
 						</p>
 					</div>
 				</div>
